@@ -1,1 +1,1 @@
-# Few-Dice
+To Dice or not to Dice
