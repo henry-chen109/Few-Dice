@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 2%;
+  text-align: center;
+}
+
+main {
+  max-width: 800px;
+  /* border: 1px solid black; */
+  margin: 40px auto;
+}
+
+.dice-game-container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.labels {
+  font-size: 20px;
+}
+
+#luck-check {
+  display: none;
+}
+
+#roll-dice-button {
+  margin-top: 30px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+#roll-dice-button:hover {
+  cursor: pointer;
+}
+
+.roll-dice-container {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid gold; */
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.dice-roll-jump {
+  display: flex;
+  /* border: 1px solid green; */
+  margin-right: 50px;
+  margin-left: 50px;
+}

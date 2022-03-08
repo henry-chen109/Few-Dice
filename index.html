@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet"> 
+    <script src="utility.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title> Roll of a Dice </title>
+  </head>
+  <body>
+    <h1 id="title"> 🎲 No Dice? 🎲 </h1>
+
+    <main>
+      <div class="dice-game-container">
+          <p class="labels">What would you like to be called? &nbsp&nbsp <input type="text" id="name"></p>
+          <p class="labels">How would you describe your luck lately? &nbsp&nbsp
+            <select id="luck-stat"> 
+              <option disabled selected value id="disabled-option">Select An Option</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="mediocre">Mediocre</option>
+              <option value="awful">Awful</option>
+            </select>
+          </p>
+          <p class="labels" id="luck-check">Let's see if we can change that <span id="emoji-based-on-selection"></span></p> 
+          <button type="button" id="roll-dice-button" onclick="validateInfo()">Roll Dice</button>
+
+          <div class="roll-dice-container" >
+            <div class="dice-roll-jump" id="dice-container-1"></div>
+            <div class="dice-roll-jump" id="dice-container-2"></div>
+            <div class="dice-roll-jump" id="dice-container-3"></div>
+          </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
